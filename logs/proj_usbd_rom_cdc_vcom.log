@@ -1,0 +1,11 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC usbd_rom_cdc_vcom/example/src/cdc_desc.c
+CC usbd_rom_cdc_vcom/example/src/cdc_main.c
+CC usbd_rom_cdc_vcom/example/src/cdc_vcom.c
+CC usbd_rom_cdc_vcom/example/src/cr_startup_lpc43xx.c
+CC usbd_rom_cdc_vcom/example/src/sysinit.c
+LD usbd_rom_cdc_vcom.elf
+   text	   data	    bss	    dec	    hex	filename
+  13524	    208	    396	  14128	   3730	usbd_rom_cdc_vcom.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

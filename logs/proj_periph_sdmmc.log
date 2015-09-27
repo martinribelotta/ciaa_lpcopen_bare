@@ -1,0 +1,57 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC lpc_chip_43xx/src/adc_18xx_43xx.c
+CC lpc_chip_43xx/src/aes_18xx_43xx.c
+CC lpc_chip_43xx/src/atimer_18xx_43xx.c
+CC lpc_chip_43xx/src/ccan_18xx_43xx.c
+CC lpc_chip_43xx/src/chip_18xx_43xx.c
+CC lpc_chip_43xx/src/clock_18xx_43xx.c
+CC lpc_chip_43xx/src/dac_18xx_43xx.c
+CC lpc_chip_43xx/src/eeprom_18xx_43xx.c
+CC lpc_chip_43xx/src/emc_18xx_43xx.c
+CC lpc_chip_43xx/src/enet_18xx_43xx.c
+CC lpc_chip_43xx/src/evrt_18xx_43xx.c
+CC lpc_chip_43xx/src/fpu_init.c
+CC lpc_chip_43xx/src/gpdma_18xx_43xx.c
+CC lpc_chip_43xx/src/gpio_18xx_43xx.c
+CC lpc_chip_43xx/src/gpiogroup_18xx_43xx.c
+CC lpc_chip_43xx/src/hsadc_18xx_43xx.c
+CC lpc_chip_43xx/src/i2c_18xx_43xx.c
+CC lpc_chip_43xx/src/i2cm_18xx_43xx.c
+CC lpc_chip_43xx/src/i2s_18xx_43xx.c
+CC lpc_chip_43xx/src/iap_18xx_43xx.c
+CC lpc_chip_43xx/src/lcd_18xx_43xx.c
+CC lpc_chip_43xx/src/otp_18xx_43xx.c
+CC lpc_chip_43xx/src/pinint_18xx_43xx.c
+CC lpc_chip_43xx/src/pmc_18xx_43xx.c
+CC lpc_chip_43xx/src/ring_buffer.c
+CC lpc_chip_43xx/src/ritimer_18xx_43xx.c
+CC lpc_chip_43xx/src/rtc_18xx_43xx.c
+CC lpc_chip_43xx/src/sct_18xx_43xx.c
+CC lpc_chip_43xx/src/sct_pwm_18xx_43xx.c
+CC lpc_chip_43xx/src/sdif_18xx_43xx.c
+CC lpc_chip_43xx/src/sdio_18xx_43xx.c
+CC lpc_chip_43xx/src/sdmmc_18xx_43xx.c
+CC lpc_chip_43xx/src/spi_18xx_43xx.c
+CC lpc_chip_43xx/src/ssp_18xx_43xx.c
+CC lpc_chip_43xx/src/stopwatch_18xx_43xx.c
+CC lpc_chip_43xx/src/sysinit_18xx_43xx.c
+CC lpc_chip_43xx/src/timer_18xx_43xx.c
+CC lpc_chip_43xx/src/uart_18xx_43xx.c
+CC lpc_chip_43xx/src/wwdt_18xx_43xx.c
+CC lpc_board_ciaa_edu_4337/src/board.c
+CC lpc_board_ciaa_edu_4337/src/board_sysinit.c
+CC lpc_board_ciaa_edu_4337/src/crp.c
+CC lpc_board_ciaa_edu_4337/src/lcd_st7565s.c
+CC lpc_board_ciaa_edu_4337/src/lpc_phy_smsc87x0.c
+CC lpc_board_ciaa_edu_4337/src/wm8904.c
+CC periph_sdmmc/example/src/cr_startup_lpc43xx.c
+CC periph_sdmmc/example/src/sdmmc.c
+CC periph_sdmmc/example/src/sysinit.c
+CC periph_sdmmc/fatfs/src/ff.c
+CC periph_sdmmc/fatfs/src/fs_mci.c
+CC periph_sdmmc/fatfs/src/rtc.c
+LD periph_sdmmc.elf
+   text	   data	    bss	    dec	    hex	filename
+  50512	   2268	   6276	  59056	   e6b0	periph_sdmmc.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

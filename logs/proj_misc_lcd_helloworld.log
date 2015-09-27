@@ -1,0 +1,10 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC misc_lcd_helloworld/example/src/cr_startup_lpc43xx.c
+CC misc_lcd_helloworld/example/src/lcd_helloworld.c
+CC misc_lcd_helloworld/example/src/lpc_rom8x8.c
+CC misc_lcd_helloworld/example/src/sysinit.c
+LD misc_lcd_helloworld.elf
+   text	   data	    bss	    dec	    hex	filename
+  13268	   4664	   1144	  19076	   4a84	misc_lcd_helloworld.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

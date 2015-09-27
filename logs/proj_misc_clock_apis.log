@@ -1,0 +1,9 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC misc_clock_apis/example/src/clock_apis.c
+CC misc_clock_apis/example/src/cr_startup_lpc43xx.c
+CC misc_clock_apis/example/src/sysinit.c
+LD misc_clock_apis.elf
+   text	   data	    bss	    dec	    hex	filename
+  33696	   4188	    160	  38044	   949c	misc_clock_apis.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

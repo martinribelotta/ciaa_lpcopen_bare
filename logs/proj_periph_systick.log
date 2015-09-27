@@ -1,0 +1,9 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC periph_systick/example/src/cr_startup_lpc43xx.c
+CC periph_systick/example/src/sysinit.c
+CC periph_systick/example/src/systick.c
+LD periph_systick.elf
+   text	   data	    bss	    dec	    hex	filename
+  12304	     56	    104	  12464	   30b0	periph_systick.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

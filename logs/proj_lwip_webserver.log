@@ -1,0 +1,9 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC lwip_webserver/example/src/httpd.c
+In file included from lwip_webserver/example/src/httpd.c:84:0:
+lwip_webserver/lwip/inc/lwip/tcp.h:41:21: fatal error: lwip/ip.h: No such file or directory
+ #include "lwip/ip.h"
+                     ^
+compilation terminated.
+make[1]: *** [lwip_webserver/example/src/httpd.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

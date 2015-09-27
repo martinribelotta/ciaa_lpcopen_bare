@@ -1,0 +1,10 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC lwip_freertos_webserver/example/src/freertos_webserver.c
+In file included from lwip_freertos_webserver/lwip/inc/lwip/tcpip.h:39:0,
+                 from lwip_freertos_webserver/example/src/freertos_webserver.c:46:
+lwip_freertos_webserver/lwip/inc/lwip/api_msg.h:41:26: fatal error: lwip/ip_addr.h: No such file or directory
+ #include "lwip/ip_addr.h"
+                          ^
+compilation terminated.
+make[1]: *** [lwip_freertos_webserver/example/src/freertos_webserver.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

@@ -1,0 +1,45 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC periph_pinint/example/src/pinint.c
+periph_pinint/example/src/pinint.c:92:2: error: #error "PININT Interrupt not configured for this example"
+ #error "PININT Interrupt not configured for this example"
+  ^
+In file included from lpc_chip_43xx/inc/chip_lpc43xx.h:191:0,
+                 from lpc_chip_43xx/inc/chip.h:39,
+                 from periph_pinint/example/src/pinint.c:32:
+periph_pinint/example/src/pinint.c: In function 'PININT_IRQ_HANDLER':
+periph_pinint/example/src/pinint.c:113:56: error: 'PININT_INDEX' undeclared (first use in this function)
+  Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH(PININT_INDEX));
+                                                        ^
+lpc_chip_43xx/inc/pinint_18xx_43xx.h:72:34: note: in definition of macro 'PININTCH'
+ #define PININTCH(ch)      (1 << (ch))
+                                  ^
+periph_pinint/example/src/pinint.c:113:56: note: each undeclared identifier is reported only once for each function it appears in
+  Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH(PININT_INDEX));
+                                                        ^
+lpc_chip_43xx/inc/pinint_18xx_43xx.h:72:34: note: in definition of macro 'PININTCH'
+ #define PININTCH(ch)      (1 << (ch))
+                                  ^
+periph_pinint/example/src/pinint.c: In function 'main':
+periph_pinint/example/src/pinint.c:133:21: error: 'TEST_INPUT_PIN_PORT' undeclared (first use in this function)
+  Chip_SCU_PinMuxSet(TEST_INPUT_PIN_PORT, TEST_INPUT_PIN_BIT,
+                     ^
+periph_pinint/example/src/pinint.c:133:42: error: 'TEST_INPUT_PIN_BIT' undeclared (first use in this function)
+  Chip_SCU_PinMuxSet(TEST_INPUT_PIN_PORT, TEST_INPUT_PIN_BIT,
+                                          ^
+periph_pinint/example/src/pinint.c:134:48: error: 'TEST_INPUT_MODE_FUNC' undeclared (first use in this function)
+         (SCU_MODE_INBUFF_EN | SCU_MODE_INACT | TEST_INPUT_MODE_FUNC) );
+                                                ^
+periph_pinint/example/src/pinint.c:137:42: error: 'TEST_INPUT_PORT' undeclared (first use in this function)
+  Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, TEST_INPUT_PORT, TEST_INPUT_PIN);
+                                          ^
+periph_pinint/example/src/pinint.c:137:59: error: 'TEST_INPUT_PIN' undeclared (first use in this function)
+  Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, TEST_INPUT_PORT, TEST_INPUT_PIN);
+                                                           ^
+periph_pinint/example/src/pinint.c:140:25: error: 'PININT_INDEX' undeclared (first use in this function)
+  Chip_SCU_GPIOIntPinSel(PININT_INDEX, TEST_INPUT_PORT, TEST_INPUT_PIN);
+                         ^
+periph_pinint/example/src/pinint.c:148:23: error: 'PININT_NVIC_NAME' undeclared (first use in this function)
+  NVIC_ClearPendingIRQ(PININT_NVIC_NAME);
+                       ^
+make[1]: *** [periph_pinint/example/src/pinint.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

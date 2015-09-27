@@ -1,0 +1,9 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC periph_ritimer/example/src/cr_startup_lpc43xx.c
+CC periph_ritimer/example/src/ritimer.c
+CC periph_ritimer/example/src/sysinit.c
+LD periph_ritimer.elf
+   text	   data	    bss	    dec	    hex	filename
+  12400	     56	    104	  12560	   3110	periph_ritimer.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

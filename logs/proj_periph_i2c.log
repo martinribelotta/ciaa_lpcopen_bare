@@ -1,0 +1,13 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC periph_i2c/example/src/cr_startup_lpc43xx.c
+CC periph_i2c/example/src/i2c.c
+periph_i2c/example/src/i2c.c: In function 'i2c_iox_events':
+periph_i2c/example/src/i2c.c:377:22: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+    iox_xfer.txBuff = (const uint8_t *) iox_data[0];
+                      ^
+CC periph_i2c/example/src/sysinit.c
+LD periph_i2c.elf
+   text	   data	    bss	    dec	    hex	filename
+  36160	   2268	    820	  39248	   9950	periph_i2c.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

@@ -2,4 +2,4 @@
 *.d
 *.elf
 *.lst
-*.log
+*.bin

@@ -1,0 +1,47 @@
+Testing freertos_blinky Ok
+Testing lwip_freertos_tcpecho Fail See ./logs/proj_lwip_freertos_tcpecho.log
+Testing lwip_freertos_webserver Fail See ./logs/proj_lwip_freertos_webserver.log
+Testing lwip_tcpecho Fail See ./logs/proj_lwip_tcpecho.log
+Testing lwip_webserver Fail See ./logs/proj_lwip_webserver.log
+Testing misc_clock_apis Ok
+Testing misc_iox_sensor Fail See ./logs/proj_misc_iox_sensor.log
+Testing misc_lcd_helloworld Ok
+Testing misc_otp_funcs Ok
+Testing misc_pmc_states Ok
+Testing misc_trimpot Fail See ./logs/proj_misc_trimpot.log
+Testing periph_adc Fail See ./logs/proj_periph_adc.log
+Testing periph_aes Ok
+Testing periph_atimer Ok
+Testing periph_blinky Ok
+Testing periph_ccan Ok
+Testing periph_dac Ok
+Testing periph_dma_timertrig Ok
+Testing periph_flashiap Ok
+Testing periph_grouped_int Fail See ./logs/proj_periph_grouped_int.log
+Testing periph_i2c Ok
+Testing periph_i2cm_interrupt Ok
+Testing periph_i2cm_polling Ok
+Testing periph_i2s Fail See ./logs/proj_periph_i2s.log
+Testing periph_pinint Fail See ./logs/proj_periph_pinint.log
+Testing periph_ritimer Ok
+Testing periph_rtc Ok
+Testing periph_sct_pwm Fail See ./logs/proj_periph_sct_pwm.log
+Testing periph_sdio Ok
+Testing periph_sdmmc Ok
+Testing periph_ssp Fail See ./logs/proj_periph_ssp.log
+Testing periph_systick Ok
+Testing periph_timers Ok
+Testing periph_uart Ok
+Testing periph_uart_rb Ok
+Testing periph_watchdog Ok
+Testing usbd_rom_bwtest Ok
+Testing usbd_rom_cdc_uart Fail See ./logs/proj_usbd_rom_cdc_uart.log
+Testing usbd_rom_cdc_vcom Ok
+Testing usbd_rom_dfu_composite Ok
+Testing usbd_rom_hid_generic Ok
+Testing usbd_rom_hid_keyboard Ok
+Testing usbd_rom_hid_mouse Ok
+Testing usbd_rom_hid_sio Fail See ./logs/proj_usbd_rom_hid_sio.log
+Testing usbd_rom_libusb Ok
+Testing usbd_rom_msc_ram Ok
+Testing usbd_rom_msc_sdmmc Ok

@@ -1,0 +1,9 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC lwip_tcpecho/example/src/echo.c
+In file included from lwip_tcpecho/example/src/echo.c:47:0:
+lwip_tcpecho/lwip/inc/lwip/tcp.h:41:21: fatal error: lwip/ip.h: No such file or directory
+ #include "lwip/ip.h"
+                     ^
+compilation terminated.
+make[1]: *** [lwip_tcpecho/example/src/echo.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

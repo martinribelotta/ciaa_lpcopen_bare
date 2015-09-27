@@ -1,0 +1,11 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC usbd_rom_libusb/example/src/cr_startup_lpc43xx.c
+CC usbd_rom_libusb/example/src/libusbdev.c
+CC usbd_rom_libusb/example/src/libusbdev_desc.c
+CC usbd_rom_libusb/example/src/libusbdev_main.c
+CC usbd_rom_libusb/example/src/sysinit.c
+LD usbd_rom_libusb.elf
+   text	   data	    bss	    dec	    hex	filename
+  13620	    136	   4240	  17996	   464c	usbd_rom_libusb.elf
+CLEAN
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

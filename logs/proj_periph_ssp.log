@@ -1,0 +1,78 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC lpc_chip_43xx/src/adc_18xx_43xx.c
+CC lpc_chip_43xx/src/aes_18xx_43xx.c
+CC lpc_chip_43xx/src/atimer_18xx_43xx.c
+CC lpc_chip_43xx/src/ccan_18xx_43xx.c
+CC lpc_chip_43xx/src/chip_18xx_43xx.c
+CC lpc_chip_43xx/src/clock_18xx_43xx.c
+CC lpc_chip_43xx/src/dac_18xx_43xx.c
+CC lpc_chip_43xx/src/eeprom_18xx_43xx.c
+CC lpc_chip_43xx/src/emc_18xx_43xx.c
+CC lpc_chip_43xx/src/enet_18xx_43xx.c
+CC lpc_chip_43xx/src/evrt_18xx_43xx.c
+CC lpc_chip_43xx/src/fpu_init.c
+CC lpc_chip_43xx/src/gpdma_18xx_43xx.c
+CC lpc_chip_43xx/src/gpio_18xx_43xx.c
+CC lpc_chip_43xx/src/gpiogroup_18xx_43xx.c
+CC lpc_chip_43xx/src/hsadc_18xx_43xx.c
+CC lpc_chip_43xx/src/i2c_18xx_43xx.c
+CC lpc_chip_43xx/src/i2cm_18xx_43xx.c
+CC lpc_chip_43xx/src/i2s_18xx_43xx.c
+CC lpc_chip_43xx/src/iap_18xx_43xx.c
+CC lpc_chip_43xx/src/lcd_18xx_43xx.c
+CC lpc_chip_43xx/src/otp_18xx_43xx.c
+CC lpc_chip_43xx/src/pinint_18xx_43xx.c
+CC lpc_chip_43xx/src/pmc_18xx_43xx.c
+CC lpc_chip_43xx/src/ring_buffer.c
+CC lpc_chip_43xx/src/ritimer_18xx_43xx.c
+CC lpc_chip_43xx/src/rtc_18xx_43xx.c
+CC lpc_chip_43xx/src/sct_18xx_43xx.c
+CC lpc_chip_43xx/src/sct_pwm_18xx_43xx.c
+CC lpc_chip_43xx/src/sdif_18xx_43xx.c
+CC lpc_chip_43xx/src/sdio_18xx_43xx.c
+CC lpc_chip_43xx/src/sdmmc_18xx_43xx.c
+CC lpc_chip_43xx/src/spi_18xx_43xx.c
+CC lpc_chip_43xx/src/ssp_18xx_43xx.c
+CC lpc_chip_43xx/src/stopwatch_18xx_43xx.c
+CC lpc_chip_43xx/src/sysinit_18xx_43xx.c
+CC lpc_chip_43xx/src/timer_18xx_43xx.c
+CC lpc_chip_43xx/src/uart_18xx_43xx.c
+CC lpc_chip_43xx/src/wwdt_18xx_43xx.c
+CC lpc_board_ciaa_edu_4337/src/board.c
+CC lpc_board_ciaa_edu_4337/src/board_sysinit.c
+CC lpc_board_ciaa_edu_4337/src/crp.c
+CC lpc_board_ciaa_edu_4337/src/lcd_st7565s.c
+CC lpc_board_ciaa_edu_4337/src/lpc_phy_smsc87x0.c
+CC lpc_board_ciaa_edu_4337/src/wm8904.c
+CC periph_ssp/example/src/ssp.c
+periph_ssp/example/src/ssp.c:55:2: warning: #warning Unsupported Board [-Wcpp]
+ #warning Unsupported Board
+  ^
+periph_ssp/example/src/ssp.c: In function 'appSSPTest':
+periph_ssp/example/src/ssp.c:163:52: error: 'LPC_GPDMA_SSP_TX' undeclared (first use in this function)
+  dmaChSSPTx = Chip_GPDMA_GetFreeChannel(LPC_GPDMA, LPC_GPDMA_SSP_TX);
+                                                    ^
+periph_ssp/example/src/ssp.c:163:52: note: each undeclared identifier is reported only once for each function it appears in
+periph_ssp/example/src/ssp.c:164:52: error: 'LPC_GPDMA_SSP_RX' undeclared (first use in this function)
+  dmaChSSPRx = Chip_GPDMA_GetFreeChannel(LPC_GPDMA, LPC_GPDMA_SSP_RX);
+                                                    ^
+periph_ssp/example/src/ssp.c:183:31: error: 'LPC_SSP' undeclared (first use in this function)
+    Chip_SSP_RWFrames_Blocking(LPC_SSP, &xf_setup);
+                               ^
+periph_ssp/example/src/ssp.c: In function 'appSSPSelectModeMenu':
+periph_ssp/example/src/ssp.c:276:23: error: 'LPC_SSP' undeclared (first use in this function)
+    Chip_SSP_SetMaster(LPC_SSP, 1);
+                       ^
+periph_ssp/example/src/ssp.c: In function 'SSPIRQHANDLER':
+periph_ssp/example/src/ssp.c:338:23: error: 'LPC_SSP' undeclared (first use in this function)
+  Chip_SSP_Int_Disable(LPC_SSP); /* Disable all interrupt */
+                       ^
+periph_ssp/example/src/ssp.c: In function 'main':
+periph_ssp/example/src/ssp.c:379:17: error: 'LPC_SSP' undeclared (first use in this function)
+  Board_SSP_Init(LPC_SSP);
+                 ^
+periph_ssp/example/src/ssp.c:398:17: error: 'SSP_IRQ' undeclared (first use in this function)
+  NVIC_EnableIRQ(SSP_IRQ);
+                 ^
+make[1]: *** [periph_ssp/example/src/ssp.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

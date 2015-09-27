@@ -1,0 +1,59 @@
+make[1]: se ingresa al directorio «/home/martin/Proyectos/ciaa/liblpc»
+CC periph_adc/example/src/adc.c
+periph_adc/example/src/adc.c: In function 'App_DMA_Test':
+periph_adc/example/src/adc.c:104:29: error: '_LPC_ADC_ID' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, ENABLE);
+                             ^
+periph_adc/example/src/adc.c:104:29: note: each undeclared identifier is reported only once for each function it appears in
+periph_adc/example/src/adc.c:104:42: error: '_ADC_CHANNLE' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, ENABLE);
+                                          ^
+periph_adc/example/src/adc.c:106:55: error: '_GPDMA_CONN_ADC' undeclared (first use in this function)
+  dmaChannelNum = Chip_GPDMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_ADC);
+                                                       ^
+periph_adc/example/src/adc.c: In function 'App_Interrupt_Test':
+periph_adc/example/src/adc.c:145:17: error: '_LPC_ADC_IRQ' undeclared (first use in this function)
+  NVIC_EnableIRQ(_LPC_ADC_IRQ);
+                 ^
+periph_adc/example/src/adc.c:146:29: error: '_LPC_ADC_ID' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, ENABLE);
+                             ^
+periph_adc/example/src/adc.c:146:42: error: '_ADC_CHANNLE' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, ENABLE);
+                                          ^
+periph_adc/example/src/adc.c: In function 'App_Polling_Test':
+periph_adc/example/src/adc.c:175:24: error: '_LPC_ADC_ID' undeclared (first use in this function)
+   Chip_ADC_SetBurstCmd(_LPC_ADC_ID, ENABLE);
+                        ^
+periph_adc/example/src/adc.c:188:43: error: '_ADC_CHANNLE' undeclared (first use in this function)
+   while (Chip_ADC_ReadStatus(_LPC_ADC_ID, _ADC_CHANNLE, ADC_DR_DONE_STAT) != SET) {}
+                                           ^
+periph_adc/example/src/adc.c: In function 'ADC0_IRQHandler':
+periph_adc/example/src/adc.c:213:18: error: '_LPC_ADC_IRQ' undeclared (first use in this function)
+  NVIC_DisableIRQ(_LPC_ADC_IRQ);
+                  ^
+periph_adc/example/src/adc.c:214:29: error: '_LPC_ADC_ID' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, DISABLE);
+                             ^
+periph_adc/example/src/adc.c:214:42: error: '_ADC_CHANNLE' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, DISABLE);
+                                          ^
+periph_adc/example/src/adc.c: In function 'ADC1_IRQHandler':
+periph_adc/example/src/adc.c:233:18: error: '_LPC_ADC_IRQ' undeclared (first use in this function)
+  NVIC_DisableIRQ(_LPC_ADC_IRQ);
+                  ^
+periph_adc/example/src/adc.c:234:29: error: '_LPC_ADC_ID' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, DISABLE);
+                             ^
+periph_adc/example/src/adc.c:234:42: error: '_ADC_CHANNLE' undeclared (first use in this function)
+  Chip_ADC_Int_SetChannelCmd(_LPC_ADC_ID, _ADC_CHANNLE, DISABLE);
+                                          ^
+periph_adc/example/src/adc.c: In function 'main':
+periph_adc/example/src/adc.c:273:16: error: '_LPC_ADC_ID' undeclared (first use in this function)
+  Chip_ADC_Init(_LPC_ADC_ID, &ADCSetup);
+                ^
+periph_adc/example/src/adc.c:274:38: error: '_ADC_CHANNLE' undeclared (first use in this function)
+  Chip_ADC_EnableChannel(_LPC_ADC_ID, _ADC_CHANNLE, ENABLE);
+                                      ^
+make[1]: *** [periph_adc/example/src/adc.o] Error 1
+make[1]: se sale del directorio «/home/martin/Proyectos/ciaa/liblpc»

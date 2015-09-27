@@ -79,6 +79,7 @@ CROSS=arm-none-eabi-
 CC=$(CROSS)gcc
 LD=$(CROSS)gcc
 SIZE=$(CROSS)size
+OBJCOPY=$(CROSS)objcopy
 LIST=$(CROSS)objdump -xCedlSwz
 GDB=$(CROSS)gdb
 OOCD=openocd
@@ -105,6 +106,7 @@ endif
 $(TARGET): $(OBJECTS) Makefile
 	@echo "LD $@"
 	$(Q)$(LD) -o $@ $(OBJECTS) $(LDFLAGS)
+	$(Q)$(OBJCOPY) -v -O binary $@ $(APP).bin
 	$(Q)$(LIST) $@ > $(APP).lst
 	$(Q)$(SIZE) $@
 
@@ -118,6 +120,18 @@ debug: $(TARGET)
 
 run: $(TARGET)
 	$(Q)$(GDB) $< -batch -ex "target remote :3333" -ex "mon reset halt" -ex "load" -ex "mon reset run" -ex "quit"
+
+download: $(TARGET)
+	$(Q)$(OOCD) -f ciaa-nxp.cfg \
+		-c "init" \
+		-c "halt 0" \
+		-c "flash write_image erase unlock $(APP).bin 0x1A000000 bin" \
+		-c "reset run" \
+		-c "shutdown"
+
+erase:
+	$(Q)$(OOCD) -f ciaa-nxp.cfg \
+		-c "init" -c "halt 0" -c "flash erase_sector 0 0 last" -c "shutdown"
 
 clean:
 	@echo "CLEAN"
