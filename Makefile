@@ -1,4 +1,4 @@
-APP=freertos_blinky
+#APP=freertos_blinky
 #APP=lwip_freertos_tcpecho
 #APP=lwip_freertos_webserver
 #APP=lwip_tcpecho
@@ -28,7 +28,7 @@ APP=freertos_blinky
 #APP=periph_sct_pwm
 #APP=periph_sdio
 #APP=periph_sdmmc
-#APP=periph_ssp
+APP=periph_ssp
 #APP=periph_systick
 #APP=periph_timers
 #APP=periph_uart
@@ -108,6 +108,7 @@ $(TARGET): $(OBJECTS) Makefile
 	$(Q)$(LD) -o $@ $(OBJECTS) $(LDFLAGS)
 	$(Q)$(OBJCOPY) -v -O binary $@ $(APP).bin
 	$(Q)$(LIST) $@ > $(APP).lst
+	$(Q)echo Executable SIZE:
 	$(Q)$(SIZE) $@
 
 .PHONY: clean debug openocd
@@ -135,4 +136,4 @@ erase:
 
 clean:
 	@echo "CLEAN"
-	$(Q)rm -fR $(OBJECTS) $(TARGET) $(APP).lst
+	$(Q)rm -fR $(OBJECTS) $(TARGET) $(DEPS) $(APP).lst
