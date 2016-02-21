@@ -52,10 +52,10 @@
 #define LPC_GPDMA_SSP_RX  GPDMA_CONN_SSP0_Rx
 #define SSPIRQHANDLER SSP0_IRQHandler
 #elif defined(BOARD_CIAA_EDU_NXP_4337)
-#define LPC_SSP           LPC_SSP0
-#define SSP_IRQ           SSP0_IRQn
-#define LPC_GPDMA_SSP_TX  GPDMA_CONN_SSP0_Tx
-#define LPC_GPDMA_SSP_RX  GPDMA_CONN_SSP0_Rx
+#define LPC_SSP           LPC_SSP1
+#define SSP_IRQ           SSP1_IRQn
+#define LPC_GPDMA_SSP_TX  GPDMA_CONN_SSP1_Tx
+#define LPC_GPDMA_SSP_RX  GPDMA_CONN_SSP1_Rx
 #define SSPIRQHANDLER SSP0_IRQHandler
 #else
 #warning Unsupported Board
